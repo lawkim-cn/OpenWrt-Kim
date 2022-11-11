@@ -1,4 +1,3 @@
 src-git small8 https://github.com/kenzok8/small-package
 src-git helloworld https://github.com/fw876/helloworld
 src-git passwall https://github.com/xiaorouji/openwrt-passwall
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git

@@ -73,6 +73,8 @@ jobs:
 
     - name: 安装 Feeds
       run: cd openwrt && ./scripts/feeds install -a
+           cd openwrt/package
+           git clone https://github.com/jerrykuku/luci-theme-argon.git
 
     - name: 加载自定义设置
       run: |

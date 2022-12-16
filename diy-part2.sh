@@ -17,6 +17,6 @@ sed -i 's/R22.12.1/R22.12.1 Build By lawkim/g' package/lean/default/files/zzz-de
 # Modify default Themes
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/Makefile
-cd lede/package/lean  
+cd package/lean  
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git

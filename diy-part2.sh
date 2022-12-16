@@ -15,8 +15,8 @@ sed -i 's/192.168.1.1/192.168.1.252/g' package/base-files/files/bin/config_gener
 # Modify default Ver
 sed -i 's/R22.12.1/R22.12.1 Build By lawkim/g' package/lean/default-settings/files/zzz-default-settings
 # Modify default Themes
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/Makefile
-sed -i 's/bootstrap/argon/g' feeds/luci/collections/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
 cd package/lean  
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git

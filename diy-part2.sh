@@ -20,3 +20,5 @@ sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
 cd package/lean  
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+cd openwrt/package
+git clone https://github.com/jerrykuku/luci-theme-argon.git

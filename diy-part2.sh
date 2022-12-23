@@ -20,6 +20,6 @@ sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
 cd feeds/luci/themes
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-cd ~/package
+cd ~/openwrt/package
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git lean/ddns-go
 git clone https://github.com/sirpdboy/luci-theme-opentopd lean/luci-theme-opentopd

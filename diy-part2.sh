@@ -17,8 +17,8 @@ sed -i 's/R22.12.1/R22.12.1 Build By lawkim/g' package/lean/default-settings/fil
 # Modify default Themes
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
-git clone https://github.com/sirpdboy/luci-app-ddns-go.git lean/ddns-go
-git clone https://github.com/sirpdboy/luci-theme-opentopd lean/luci-theme-opentopd
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
 cd feeds/luci/themes
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git

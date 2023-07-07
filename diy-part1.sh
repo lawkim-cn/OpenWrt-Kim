@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i '$a src-git smpackage https://github.com/kenzok78/small-package' feeds.conf.default
-sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # Add a feed source

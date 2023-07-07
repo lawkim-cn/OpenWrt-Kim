@@ -21,5 +21,6 @@ git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
 cd feeds/luci/themes
 rm -rf luci-theme-argon
+rm -rf luci-theme-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config

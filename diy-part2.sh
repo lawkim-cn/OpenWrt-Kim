@@ -13,7 +13,7 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
 # Modify default Ver
-sed -i 's/R22.12.1/R23.6.6 Build By LawKim/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R23.7.7/R23.7.7 Build By LawKim/g' package/lean/default-settings/files/zzz-default-settings
 # Modify default Themes
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile

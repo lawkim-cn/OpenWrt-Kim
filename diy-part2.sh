@@ -20,6 +20,5 @@ sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci-light/Makefile
 cd feeds/luci/themes
 rm -rf luci-theme-argon
 rm -rf luci-theme-argon-config
-git clone -b https://github.com/kenzok78/luci-theme-design.git luci-theme-design
-git clone -b https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-git clone -b https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
+git clone -b https://github.com/kenzok78/luci-theme-design.git feeds/luci/themes/luci-theme-design
+git clone -b https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon

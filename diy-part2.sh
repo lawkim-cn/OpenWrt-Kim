@@ -20,7 +20,7 @@ sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_gener
 # rm -rf feeds/luci/themes/luci-theme-argon
 # 拉取 argon 原作者的源码
 git clone -b https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
-git clone -b https://github.com/kenzok78/luci-theme-design.git luci-theme-design
+git clone -b https://github.com/kenzok78/luci-theme-design.git feeds/luci/themes/luci-theme-design
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci-light/Makefile

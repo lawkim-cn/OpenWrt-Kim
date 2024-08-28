@@ -14,11 +14,13 @@
 sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
 # Modify default Ver
 # sed -i 's/R23.7.7/R23.7.7 Build By LawKim/g' package/lean/default-settings/files/zzz-default-settings
-# Modify default Themes
+
+########### 更改默认主题（可选）###########
+# 删除自定义源默认的 argon 主题
+# rm -rf feeds/luci/themes/luci-theme-argon
+# 拉取 argon 原作者的源码
+git clone -b https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
+git clone -b https://github.com/kenzok78/luci-theme-design.git luci-theme-design
+# 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci-light/Makefile
-cd openwrt/feeds/luci/themes
-rm -rf luci-theme-argon
-rm -rf luci-theme-argon-config
-git clone -b https://github.com/kenzok78/luci-theme-design.git luci-theme-design
-git clone -b https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon

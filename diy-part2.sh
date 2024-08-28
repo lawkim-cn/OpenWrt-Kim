@@ -17,8 +17,8 @@ sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_gener
 # Modify default Themes
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci-light/Makefile
-cd feeds/luci/themes
+cd openwrt/feeds/luci/themes
 rm -rf luci-theme-argon
 rm -rf luci-theme-argon-config
-git clone -b https://github.com/kenzok78/luci-theme-design.git feeds/luci/themes/luci-theme-design
-git clone -b https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
+git clone -b https://github.com/kenzok78/luci-theme-design.git luci-theme-design
+git clone -b https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon

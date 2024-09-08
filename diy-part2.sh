@@ -23,4 +23,3 @@ git clone -b https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci-light/Makefile
-sed -i 's/bootstrap/argon/g' package/default-settings

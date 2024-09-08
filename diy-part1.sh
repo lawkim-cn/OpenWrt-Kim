@@ -11,10 +11,10 @@
 #
 
 # Uncomment a feed source
-#sed -i '$a src-git smpackage https://github.com/kenzok78/small-package' feeds.conf.default
-sed -i '$a src-git zrxk https://github.com/zrxk/openwrt-packages' feeds.conf.default
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git zrxk https://github.com/zrxk/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add a feed source
 #echo 'src-git openwrt_kiddin9 https://github.com/kiddin9/openwrt-packages.git' >>feeds.conf.default
 #echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
